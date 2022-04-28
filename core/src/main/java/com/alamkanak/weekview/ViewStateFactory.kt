@@ -228,7 +228,7 @@ private const val MONOSPACE = 3
 private fun TypedArray.getCustomTypeface(): Typeface? {
     val fontFamily = getString(R.styleable.WeekView_fontFamily)
     val typefaceIndex = getInteger(R.styleable.WeekView_typeface, Typeface.NORMAL)
-    val textStyle = getInteger(R.styleable.WeekView_textStyle, Typeface.NORMAL)
+    val textStyle = getInteger(R.styleable.WeekView_textstyle, Typeface.NORMAL)
     return getTypefaceFromAttrs(fontFamily, typefaceIndex, textStyle)
 }
 
