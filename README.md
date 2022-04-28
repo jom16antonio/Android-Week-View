@@ -17,9 +17,9 @@ Features
 
 Getting started
 ---------
-* Check out [the wiki](https://github.com/thellmund/Android-Week-View/wiki) on how to get started.
-* Take a look at the [sample app](https://github.com/thellmund/Android-Week-View/tree/develop/sample) for more details on how to use `WeekView`.
-* See the [changelog](https://github.com/thellmund/Android-Week-View/blob/develop/CHANGELOG.md) for new functionality and updates to the API.
+* Check out [the wiki](https://github.com/jom16antonio/Android-Week-View/wiki) on how to get started.
+* Take a look at the [sample app](https://github.com/jom16antonio/Android-Week-View/tree/develop/sample) for more details on how to use `WeekView`.
+* See the [changelog](https://github.com/jom16antonio/Android-Week-View/blob/develop/CHANGELOG.md) for new functionality and updates to the API.
 
 License
 ----------

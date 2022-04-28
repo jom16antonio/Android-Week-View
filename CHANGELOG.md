@@ -53,10 +53,10 @@ This release fixes a build issue introduced in the last version.
 ## Version 5.2.0
 *(2020-11-19)*
 
-- New: WeekView can now display blocked times. To enable this, `WeekViewEvent<T>` was replaced by the sealed class `WeekViewEntity`, which can be of type `Event<T>` or `BlockedTime`. Refer to the [wiki](https://github.com/thellmund/Android-Week-View/wiki) to get started.
+- New: WeekView can now display blocked times. To enable this, `WeekViewEvent<T>` was replaced by the sealed class `WeekViewEntity`, which can be of type `Event<T>` or `BlockedTime`. Refer to the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki) to get started.
 - Changed: `WeekViewDisplayable<T>` is now deprecated. Now, submit elements of type `T` directly to WeekView’s adapter by calling `adapter.submitList(List<T>)`. Then, implement `onCreateEntity()` in your adapter to create a `WeekViewEntity` from your object. 
 - Changed: The methods for scrolling to specific dates and times have been streamlined. You should now use `scrollToDate(date: Calendar)`, `scrollToTime(hour: Int, minute: Int)`, and `scrollToDateTime(dateTime: Calendar)`.
-- Changed: WeekView no longer supports emojis by default. To add emoji support, you must add a dependency to `com.github.thellmund.Android-Week-View:emoji:x.y.z` and call `weekView.enableEmojiProcessing()` before submitting events.
+- Changed: WeekView no longer supports emojis by default. To add emoji support, you must add a dependency to `com.github.jom16antonio.Android-Week-View:emoji:x.y.z` and call `weekView.enableEmojiProcessing()` before submitting events.
 - Fixed: WeekView no longer forgets to call `onEmptyViewLongClick()` if an empty area in the calendar was long-clicked.
 
 ## Version 5.0.3
@@ -82,7 +82,7 @@ Thanks for reporting this, [FeFelten](https://github.com/FeFelten)!
 ## Version 5.0.0
 *(2020-10-20)*
 
-This release contains new functionality and includes breaking changes. To get started, take a look at the [wiki](https://github.com/thellmund/Android-Week-View/wiki).
+This release contains new functionality and includes breaking changes. To get started, take a look at the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki).
 - New: WeekView now works in right-to-left mode.
 - New: You can now use `SpannableString` for event titles and locations to provide custom styling.
 - New: You can now choose to show the current week number in the header.
@@ -120,7 +120,7 @@ This release contains new functionality and includes breaking changes. To get st
 ## Version 5.0.0-beta01
 *(2020-09-29)*
 
-This beta release contains new functionality and includes breaking changes. To get started, take a look at the [wiki](https://github.com/thellmund/Android-Week-View/wiki).
+This beta release contains new functionality and includes breaking changes. To get started, take a look at the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki).
 - New: You can now use `SpannableString` for event titles and locations to provide custom styling.
 - New: You can now choose to show the current week number in the header.
 - New: You can now elevate the header by providing a header row bottom shadow.
@@ -190,8 +190,8 @@ Thanks for reporting issues, [MohammadB72](https://github.com/MohammadB72) and [
 *(2019-09-29)*
 
 This release includes many new features and breaking changes.
-- New: Providing events to `WeekView` is now easier. Check out the [wiki](https://github.com/thellmund/Android-Week-View/wiki) to find out more.
-- New: You can use JodaTime, JSR-310, and ThreeTenABP with `WeekView`. Check out the [wiki](https://github.com/thellmund/Android-Week-View/wiki/Extensions) to find out more. 
+- New: Providing events to `WeekView` is now easier. Check out the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki) to find out more.
+- New: You can use JodaTime, JSR-310, and ThreeTenABP with `WeekView`. Check out the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki/Extensions) to find out more. 
 - New: When building a `WeekViewEvent` via `WeekViewEvent.Builder`, you can pass in resource IDs for the title and location.
 - New: When declaring the style of a `WeekViewEvent` via `WeekViewEvent.Style.Builder`, you can pass in resource IDs for color and dimension properties.
 - New: You can use custom fonts with `WeekView` by setting `fontFamily`, `typeface`, and `textStyle` in the XML layout file.
@@ -199,7 +199,7 @@ This release includes many new features and breaking changes.
 - Changed: `WeekView` now uses AndroidX instead of the old Support Library.
 - Changed: `WeekView` is now a 100% Kotlin project.
 - Changed: `WeekViewLoader` is removed; use any of the new `EventsLoader`s instead.
-- Changed: The naming of various listeners and setter methods is more unified. Check out the [wiki](https://github.com/thellmund/Android-Week-View/wiki/Listeners) to find out more.
+- Changed: The naming of various listeners and setter methods is more unified. Check out the [wiki](https://github.com/jom16antonio/Android-Week-View/wiki/Listeners) to find out more.
 - Changed: Use more extensive caching and reduce redundant `Canvas` operations for better performance.
 - Changed: The “now line” is now drawn over the entire width of a day. 
 - Changed: Event chips use anti-aliasing for smoother corner radiuses.
